@@ -1,0 +1,42 @@
+# Go build artifacts
+/bin/
+/dist/
+/build/
+/out/
+/tmp/
+
+/*.exe
+/*.exe~
+/*.dll
+/*.so
+/*.dylib
+/*.test
+
+# Coverage
+coverage.out
+coverage.html
+
+# IDE
+.vscode/
+.idea/
+*.iml
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+/log/
+/logs/
+
+# Env / локальные конфиги
+.env
+.env.local
+.env.development
+.env.production
+
+config.local.yaml
+configs/*.local.yaml

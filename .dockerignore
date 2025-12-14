@@ -1,0 +1,28 @@
+# Git
+.git
+.gitignore
+
+# IDE / editor
+.vscode
+.idea
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+bin
+dist
+build
+out
+tmp
+*.log
+
+# Coverage
+coverage.out
+coverage.html
+
+# CI / meta
+.gitlab-ci.yml
+.github
