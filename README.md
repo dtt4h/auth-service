@@ -15,25 +15,25 @@
 | /health        | GET    | Healthcheck                    | -                        | {status: "ok", version}                   | No   |
 
 ## Структура проекта
-go-auth-service/
-├── cmd/
-│   └── server/
-│       └── main.go           # Entry point
-├── internal/
-│   ├── config/              # YAML/ENV config
-│   ├── handler/             # HTTP handlers (Gin)
-│   ├── service/             # Business logic
-│   ├── repository/          # Data access (GORM/Redis)
-│   ├── entity/              # DB models
-│   ├── middleware/          # JWT, logging, recovery
-│   └── lib/                 # Utilities (logger, validator)
-├── pkg/                     # Reusable (token, crypto)
-├── migrations/              # DB schema
-├── tests/                   # Integration tests
-├── docker-compose.yml       # Local stack
-├── Dockerfile
-├── Makefile
-└── README.md
+go-auth-service/  
+├── cmd/  
+│   └── server/  
+│       └── main.go          # Entry point  
+├── internal/  
+│   ├── config/              # YAML/ENV config  
+│   ├── handler/             # HTTP handlers (Gin)  
+│   ├── service/             # Business logic  
+│   ├── repository/          # Data access (GORM/Redis)  
+│   ├── entity/              # DB models  
+│   ├── middleware/          # JWT, logging, recovery  
+│   └── lib/                 # Utilities (logger, validator)  
+├── pkg/                     # Reusable (token, crypto)  
+├── migrations/              # DB schema  
+├── tests/                   # Integration tests  
+├── docker-compose.yml       # Local stack  
+├── Dockerfile  
+├── Makefile  
+└── README.md  
 
 ## Технический стэк
 | Компонент | Технология              | Версия | Почему                   |
@@ -182,27 +182,27 @@ make test
 
 ## Список заданий
 
-[ ] 1.1 Инициализация проекта
-[ ] 1.2 Зависимости (go.mod)
-[ ] 1.3 Слой конфигурации (internal/config)
-[ ] 1.4 Сущности (internal/entity)
-[ ] 1.5 Цели Makefile
-[ ] 2.1 Настройка PostgreSQL
-[ ] 2.2 Интерфейс репозитория (internal/repository)
-[ ] 2.3 Реализация на GORM
-[ ] 2.4 Redis-репозиторий
-[ ] 2.5 Docker Compose (локальный стек)
-[ ] 3.1 Утилиты JWT (pkg/token)
-[ ] 3.2 Утилиты для паролей (pkg/crypto)
-[ ] 3.3 Сервис аутентификации (internal/service)
-[ ] 3.4 DTO и валидация
-[ ] 4.1 Middleware (internal/middleware)
-[ ] 4.2 Обработчики (internal/handler)
-[ ] 4.3 Настройка роутера (cmd/server/main.go)
-[ ] 5.1 Модульные тесты (табличные)
-[ ] 5.2 Интеграционные тесты (testcontainers-go)
-[ ] 5.3 OpenAPI/Swagger
-[ ] 5.4 Мониторинг (Prometheus)
-[ ] 5.5 README.md и Демо
-[ ] 5.6 CI/CD (GitLab CI)
-[ ] 5.7 Релиз (goreleaser)
+[ ] 1.1 Инициализация проекта  
+[ ] 1.2 Зависимости (go.mod)  
+[ ] 1.3 Слой конфигурации (internal/config)  
+[ ] 1.4 Сущности (internal/entity)  
+[ ] 1.5 Цели Makefile  
+[ ] 2.1 Настройка PostgreSQL  
+[ ] 2.2 Интерфейс репозитория (internal/repository)  
+[ ] 2.3 Реализация на GORM  
+[ ] 2.4 Redis-репозиторий  
+[ ] 2.5 Docker Compose (локальный стек)  
+[ ] 3.1 Утилиты JWT (pkg/token)  
+[ ] 3.2 Утилиты для паролей (pkg/crypto)  
+[ ] 3.3 Сервис аутентификации (internal/service)  
+[ ] 3.4 DTO и валидация  
+[ ] 4.1 Middleware (internal/middleware)  
+[ ] 4.2 Обработчики (internal/handler)  
+[ ] 4.3 Настройка роутера (cmd/server/main.go)  
+[ ] 5.1 Модульные тесты (табличные)  
+[ ] 5.2 Интеграционные тесты (testcontainers-go)  
+[ ] 5.3 OpenAPI/Swagger  
+[ ] 5.4 Мониторинг (Prometheus)  
+[ ] 5.5 README.md и Демо  
+[ ] 5.6 CI/CD (GitLab CI)  
+[ ] 5.7 Релиз (goreleaser)  
